@@ -1,5 +1,5 @@
 //Global
-@import '/scss/colors.scss';
+@import "/scss/colors.scss";
 
 * {
   color: $color-4;
@@ -51,9 +51,9 @@
 }
 
 @mixin center {
-    text-align: center;
+  text-align: center;
 }
 
 p {
-    @include center;
+  @include center;
 }

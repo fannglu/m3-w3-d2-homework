@@ -1,17 +1,28 @@
 {
   "name": "wk3-day2-homework",
   "version": "1.0.0",
-  "description": "",
+  "description": "sass homework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run watch:all",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite' "
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fannglu/m3-w3-d2-homework.git"
+  },
+  "author": "Fang Lu Lim",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fannglu/m3-w3-d2-homework/issues"
+  },
+  "homepage": "https://github.com/fannglu/m3-w3-d2-homework#readme",
   "devDependencies": {
-    "lite-server": "^2.3.0",
+    "lite-server": "^2.6.1",
     "node-sass": "^7.0.1",
-    "onchange": "^3.3.0",
+    "onchange": "^7.1.0",
     "parallelshell": "^3.0.1"
   }
 }
